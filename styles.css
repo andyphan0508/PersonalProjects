@@ -1,0 +1,17 @@
+.effect {
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #aaa;   
+}
+
+.title-description {
+    text-align: center;
+}
+
+.disclaimer {
+    text-align: center;
+}
