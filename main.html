@@ -14,14 +14,45 @@
     </header>
     <body>
         <h1 class = 'title'>Welcome to my Personal (Little) Information</h1>
-        <h2 class = 'title-description'>This is the second line for the description (Just only included some information)</h2>
+        <p class = 'title-description'>This is the second line for the description (Just only included some information)</p>
         <div>
             <hr><br><br>
-            <p1 class = 'disclaimer'>For all the information that using this kind of website:
+            <p class = 'disclaimer'>
+                For all the information that using this kind of website:
                 Don't share it to all the public, for this website only 
                 include inside this webpage. If the website being caught
                 to the public, it's will be represent to the law an firmed.
-            </p1>
+            </p>
+        </div>
+        <div>
+            <button onclick = "document.getElementById('id01').style.display = 'block'">Login</button>
+        </div>
+        <div id = "id01" class = "modal">
+            <span onclick = "document.getElementById('id01').style.display = 'none'"
+            class = "close" title = "Close Modal">&times;</span>
+            <form class = "modal-content animate" action = "action_page.php">
+                <div class = "img_container">
+                    <img src = "img_avatar2.png" alt = "avatar" class = "avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" class = 'username1' name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+            </form>
         </div>
     </body>
 </html>
