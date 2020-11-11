@@ -1,58 +1,65 @@
 <!--Some dataset for the web. -->
 
 <!DOCTYPE html>
+
+<!--Other charset for the website-->
 <meta charset = 'UTF-8'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel = 'stylesheet' href = 'styles.css' href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel = 'stylesheet' href = 'styles.css' href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono">
 <script type = "text/javascript" src = "script.js"></script>
 
+<!--Bootstrap integration-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 <!--Core website-->
-<html class = 'effect'>
+<html class = 'effect' lang = 'en'>
     <header>
-        <title>Personal Portfolio</title>
+        <title>Personal Project</title>
     </header>
     <body>
-        <h1 class = 'title'>Welcome to my Personal (Little) Information</h1>
-        <p class = 'title-description'>This is the second line for the description (Just only included some information)</p>
+        <ul>
+            <li><a href = 'index.html' 
+                style = "font-weight: bold; font-size: larger;"> Home</a></li>
+            <li><a href = 'login.php'
+               style = "font-size: larger;"> Login</a></li>
+            <li><a href = 'register.php'
+                style = "font-size: larger"> Register</a></li>
+        </ul>
+
+        <h1 class = 'title'> PROJECT [codename] "STATION"</h1>
+        <p class = 'title-description'>Core website - Basic Function - Enough for use.</p>
         <div>
-            <hr><br><br>
+            <hr>
             <p class = 'disclaimer'>
                 For all the information that using this kind of website:
                 Don't share it to all the public, for this website only 
                 include inside this webpage. If the website being caught
-                to the public, it's will be represent to the law an firmed.
+                to the public, it's will be considered as a violation to
+                the GPL3-License
             </p>
-        </div>
-        <div>
-            <button onclick = "document.getElementById('id01').style.display = 'block'">Login</button>
-        </div>
-        <div id = "id01" class = "modal">
-            <span onclick = "document.getElementById('id01').style.display = 'none'"
-            class = "close" title = "Close Modal">&times;</span>
-            <form class = "modal-content animate" action = "action_page.php">
-                <div class = "img_container">
-                    <img src = "img_avatar2.png" alt = "avatar" class = "avatar">
-                </div>
-                <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" class = 'username1' name="uname" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-            </form>
+            <div class = 'background'>
+            <img src = BG.jpg class = 'pictures'>
+            </div>
+            <!--This is the blank space for additional zoning-->
+            <div class = 'container1'>
+                
+            </div>
+            <div>
+                <br><br><h1 class = 'content2'>What is this all about</h1>
+                <hr>
+                <p class = 'description2'>
+                    This is the website that related to the final project.
+                    Just a bunch of scrap of all the element happen on all
+                    the sites. From smooth scrolling, to each elements of 
+                    the navbar.
+                </p>
+            </div>
         </div>
     </body>
+    <footer>
+        <p class = 'trademark'><b>Copyright© by anonymous. In development by Slightly-Hard Working Bee®</b></p>
+        <p style="text-align: center">Published in 2020</p> 
+    </footer>
 </html>
